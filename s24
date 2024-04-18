@@ -1,0 +1,15 @@
+for file in *; do
+if [[ ! -x "$file" ]]; then
+chmod +x "$file"
+echo "Made $file executable"
+fi
+done
+
+Output
+Made file1.txt executable
+Made file2.txt executable
+Made filename.sh executable
+Made file.txt executable
+Made grades.txt executable
+Made grade.txt executable
+Made temp executable
